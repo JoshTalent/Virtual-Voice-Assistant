@@ -2,6 +2,8 @@ import json
 import numpy as np
 import os
 import logging
+
+
 logging.disable(logging.WARNING)
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 from keras.preprocessing.text import Tokenizer
@@ -10,13 +12,16 @@ from sklearn.preprocessing import LabelEncoder
 from tensorflow.python.keras.models import Sequential
 from tensorflow.python.keras.layers import Dense, Embedding, GlobalAveragePooling1D
 
+
 with open('..\\Data\\intents.json') as file:
     data = json.load(file)
+    
 
 training_sentences = []
 training_labels = []
 labels = []
 #responses = []
+
 
 for intent in data['intents']:
     for pattern in intent['patterns']:
@@ -26,6 +31,7 @@ for intent in data['intents']:
 
     if intent['tag'] not in labels:
         labels.append(intent['tag'])
+        
 
 num_classes = len(labels)
 lbl_encoder = LabelEncoder()
@@ -35,6 +41,7 @@ vocab_size = 1000
 embedding_dim = 16
 max_len = 20
 oov_token = "<OOV>"
+
 
 tokenizer = Tokenizer(num_words=vocab_size, oov_token=oov_token)
 tokenizer.fit_on_texts(training_sentences)
@@ -48,6 +55,7 @@ model.add(Dense(16, activation='relu'))
 #model.add(Dense(16, activation='relu'))
 model.add(Dense(num_classes, activation='softmax'))
 
+
 model.compile(loss='sparse_categorical_crossentropy',
               optimizer='adam', metrics=['accuracy'])
 
@@ -58,6 +66,7 @@ history = model.fit(padded_sequences, np.array(training_labels), epochs=epochs)
 model.save("..\\Data\\chat_model")
 
 import pickle
+
 
 # to save the fitted tokenizer
 with open('..\\Data\\tokenizer.pickle', 'wb') as handle:
