@@ -12,6 +12,7 @@ def add_data(query):
     cursor.execute(table, (query,))
     conn.commit()
     return True
+    
 
 def get_data():
     data = cursor.execute('SELECT * FROM ASSISTANT')
@@ -19,7 +20,9 @@ def get_data():
     for column in data.description:
         table_head.append(column[0])
     print("{:<14} {:<79} {:<20}".format(table_head[0], table_head[1], table_head[2]))
+    
     print()
+    
     for row in data:
         print("{:<14} {:<79} {:<20}".format(row[0], row[1], row[2]))
     conn.commit()
