@@ -6,6 +6,7 @@ from youtubesearchpython import VideosSearch
 import websites
 
 
+
 def googleSearch(query):
 	if 'image' in query:
 		query += "&tbm=isch"
@@ -18,19 +19,23 @@ def googleSearch(query):
 	query = query.replace('for', '')
 	webbrowser.open("https://www.google.com/search?q=" + query)
 	return "Here you go..."
+	
 
 def youtube(query):
 	query = query.replace('play', ' ')
 	query = query.replace('on youtube', ' ')
 	query = query.replace('youtube', ' ')
+	
 
 	print("Searching for videos...")
 	videosSearch = VideosSearch(query, limit=1)
 	results = videosSearch.result()['result']
 	print("Finished searching!")
 
+	
 	webbrowser.open('https://www.youtube.com/watch?v=' + results[0]['id'])
 	return "Enjoy..."
+	
 
 def open_specified_website(query):
 	website = query[5:] #re.search(r'[a-zA-Z]* (.*)', query)[1]
@@ -40,6 +45,7 @@ def open_specified_website(query):
 		return True
 	else:
 		return None
+		
 
 def get_speedtest():
 	try:
@@ -49,6 +55,7 @@ def get_speedtest():
 		return speed
 	except (speedtest.SpeedtestException, KeyboardInterrupt) as e:
 		return
+		
 
 def tell_me_about(query):
 	try:
@@ -58,6 +65,7 @@ def tell_me_about(query):
 		return result
 	except (wikipedia.WikipediaException, Exception) as e:
 		return None
+		
 
 def get_map(query):
 	webbrowser.open(f'https://www.google.com/maps/search/{query}')
