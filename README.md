@@ -6,6 +6,7 @@
 #### For more details checkout [Project Report](https://github.com/Krish-Depani/Virtual-Voice-Assistant/blob/main/Project%20Report%20GitHub.pdf)
 
 
+
 ## Features
 Our virtual voice assistant comes packed with a wide range of features, including:
 - Bringing a smile to your face with its ability to tell you jokes.
@@ -45,10 +46,12 @@ Please make sure that `Python` and `pip` are installed on your system before pro
 
 Open a terminal and navigate to your home directory.
 
+
 Clone the repository by using the command
 ```
 git clone https://github.com/Krish-Depani/Virtual-Voice-Assistant.git
 ```
+
 
 Navigate to the project directory using the command
 ```
@@ -68,6 +71,7 @@ Navigate to the `Virtual-Voice-Assistant/Plugins/` directory and run the below c
 
 python main.py
 ```
+
 
 
 You're all set! The virtual voice assistant should be up and running now.
