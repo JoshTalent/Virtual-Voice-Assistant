@@ -1,10 +1,8 @@
 # Virtual-Voice-Assistant
 
-
 #### Welcome to Virtual Voice Assisant, a virtual voice assistant that can help you with a variety of tasks. This project utilizes machine learning and natural language processing to create a natural and intuitive experience for users. With Virtual Voice Assistant, you can easily interact with your computer by simply speaking to it.
 #### For a cool demo of this project watch this [YouTube video](https://www.youtube.com/watch?v=ErR-vdYssv0)
 #### For more details checkout [Project Report](https://github.com/Krish-Depani/Virtual-Voice-Assistant/blob/main/Project%20Report%20GitHub.pdf)
-
 
 
 ## Features
@@ -29,8 +27,8 @@ Our virtual voice assistant comes packed with a wide range of features, includin
 - Playing songs and videos on YouTube, so you can enjoy your favorite music and videos.
 - Showing maps of any city you specify and calculating the distance between two destinations in Google Maps.<br>
 
-
 NOTE: Please note that in order for the virtual voice assistant to send emails, the option for "Less secure apps" must be enabled within your Gmail account. To allow access you can click [here](https://myaccount.google.com/lesssecureapps).
+
 
 ## API Keys
 To run this program you will require a bunch of API keys. Register your API key by clicking the following links
