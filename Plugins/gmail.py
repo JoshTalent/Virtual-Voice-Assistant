@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 import re
 
+
 load_dotenv(dotenv_path='..\\Data\\.env')
 
 sender_id = os.getenv('EMAIL_ID')
