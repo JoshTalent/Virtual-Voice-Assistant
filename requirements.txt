@@ -1,3 +1,4 @@
+
 pyttsx3==2.6
 SpeechRecognition==3.8.1
 tensorflow==2.10.0
