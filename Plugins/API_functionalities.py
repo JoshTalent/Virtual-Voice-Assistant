@@ -9,6 +9,7 @@ from wolframalpha import Client
 load_dotenv(dotenv_path='..\\Data\\.env')
 
 
+
 NEWS = os.getenv('NEWS_API')
 WOLFRAMALPHA = os.getenv('WOLFRAMALPHA_API')
 OPENWEATHERMAP = os.getenv('OPENWEATHERMAP_API')
