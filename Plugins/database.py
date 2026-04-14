@@ -29,3 +29,5 @@ def get_data():
     for row in data:
         print("{:<14} {:<79} {:<20}".format(row[0], row[1], row[2]))
     conn.commit()
+
+
