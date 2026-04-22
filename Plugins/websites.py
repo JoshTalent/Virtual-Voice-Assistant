@@ -42,5 +42,4 @@ websites_dict = {
     "swiggy": "https://www.swiggy.com/",
     "zomato": "https://www.zomato.com/",
     "spotify": "https://open.spotify.com/"
-    
 }
