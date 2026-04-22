@@ -1,4 +1,5 @@
 websites_dict = {
+    
     "google": "https://www.google.com/",
     "gmail": "https://mail.google.com/mail/u/0/#inbox",
     "myclass": "https://myclass.lpu.in/",
