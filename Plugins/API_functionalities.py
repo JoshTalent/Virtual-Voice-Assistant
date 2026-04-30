@@ -6,7 +6,6 @@ import re
 import requests
 from wolframalpha import Client
 
-
 load_dotenv(dotenv_path='..\\Data\\.env')
 
 
