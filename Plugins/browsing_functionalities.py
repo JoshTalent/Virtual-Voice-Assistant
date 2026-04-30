@@ -68,3 +68,4 @@ def tell_me_about(query):
 
 def get_map(query):
 	webbrowser.open(f'https://www.google.com/maps/search/{query}')
+	
