@@ -29,7 +29,6 @@ def get_ip(_return=False):
     except requests.exceptions.RequestException:
         return None
 
-
 def get_joke():
     try:
         joke = requests.get('https://v2.jokeapi.dev/joke/Any?format=txt').text
