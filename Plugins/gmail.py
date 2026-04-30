@@ -9,7 +9,6 @@ load_dotenv(dotenv_path='..\\Data\\.env')
 sender_id = os.getenv('EMAIL_ID')
 password = os.getenv('PASSWORD')
 
-
 def send_email(reciever_id, subject, body):
     # creates SMTP session
     s = smtplib.SMTP('smtp.gmail.com', 587)
