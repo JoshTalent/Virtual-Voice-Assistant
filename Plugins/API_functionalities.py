@@ -38,6 +38,7 @@ def get_joke():
     except requests.exceptions.RequestException:
         return None
 
+
 def get_news():
     try:
         top_news = ""
