@@ -6,7 +6,6 @@
 
 ## For more details checkout [Project Report](https://github.com/Krish-Depani/Virtual-Voice-Assistant/blob/main/Project%20Report%20GitHub.pdf)
 
-
 ## Features
 Our virtual voice assistant comes packed with a wide range of features, including:
 - Bringing a smile to your face with its ability to tell you jokes.
