@@ -22,6 +22,7 @@ table = '''CREATE TABLE IF NOT EXISTS ASSISTANT (SERIAL_NO INTEGER PRIMARY KEY,
 cursor.execute(table)
 conn.commit()
 
+
 try:
     # importing prebuilt modules
     import pyttsx3
