@@ -9,7 +9,6 @@ except KeyboardInterrupt:
     print("DOWNLOAD STOPPED")
     exit(0)
 
-
 import os
 import logging
 logging.disable(logging.WARNING)
