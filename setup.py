@@ -22,7 +22,6 @@ table = '''CREATE TABLE IF NOT EXISTS ASSISTANT (SERIAL_NO INTEGER PRIMARY KEY,
 cursor.execute(table)
 conn.commit()
 
-
 try:
     # importing prebuilt modules
     import pyttsx3
@@ -66,6 +65,5 @@ except ImportError:
     exit(0)
 except KeyboardInterrupt:
     print("INTERRUPTED WHILE IMPORTING MODULES")
-
 
 print("\n\nSETUP SUCCESSFUL")
