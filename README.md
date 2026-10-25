@@ -4,7 +4,6 @@
 #### For a cool demo of this project watch this [YouTube video](https://www.youtube.com/watch?v=ErR-vdYssv0)
 
 
-
 ## For more details checkout [Project Report](https://github.com/Krish-Depani/Virtual-Voice-Assistant/blob/main/Project%20Report%20GitHub.pdf)
 
 ## Features
